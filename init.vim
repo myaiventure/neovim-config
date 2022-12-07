@@ -48,26 +48,6 @@ set noruler
 " disable showcmd
 set noshowcmd
 
-" hide status line in the bottom
-" let s:hidden_all = 0
-" function! ToggleHiddenAll()
-"     if s:hidden_all == 0
-"         let s:hidden_all = 1
-"         set noshowmode
-"         set noruler
-"         set laststatus=0
-"         set noshowcmd
-"     else
-"         let s:hidden_all = 0
-"         set showmode
-"         set ruler
-"         set laststatus=2
-"         set showcmd
-"     endif
-" endfunction
-" 
-" nnoremap <S-h> :call ToggleHiddenAll()<CR>
-
 call plug#begin('C:\Users\ASUS-ARCOMP\AppData\Local\nvim\autoload\plugged')
 " hyperfocus on a range
 Plug 'junegunn/limelight.vim'
@@ -92,10 +72,6 @@ Plug 'ap/vim-css-color'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 
-" Bottom bar for neovim
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-
 " THEMES
 " One dark pro theme
 Plug 'joshdick/onedark.vim'
@@ -108,8 +84,6 @@ Plug 'folke/tokyonight.nvim', {'branch':'main'}
 
 " database
 Plug 'https://github.com/tpope/vim-dadbod'
-" (COMING SOON)
-" Plug 'kristijanhusak/vim-dadbod-ui'
 
 " split neovim and terminal
 Plug 'vimlab/split-term.vim'
@@ -118,9 +92,6 @@ call plug#end()
 
 " display all matches when tab complete
 set wildmenu
-
-" setting airline theme
-" let g:airline_theme='deus'
 
 syntax enable
 filetype plugin indent on
