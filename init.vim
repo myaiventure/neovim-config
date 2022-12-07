@@ -191,8 +191,5 @@ set guifont=Hack\ Nerd\ Font:h10
 " let g:neovide_cursor_animation_length=0.13
 " let g:neovide_cursor_trail_size=0.8
 
-" open terminal in current directory
-map <F6> :let $VIM_DIR=expand('%:t')<CR>:Term<CR>cd $VIM_DIR<CR>
-
 " set auto change directory
 set autochdir
